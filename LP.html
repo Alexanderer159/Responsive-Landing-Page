@@ -1,27 +1,34 @@
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Responsive LP</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Generus</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU_PWsiWDVFnogaGS4SBNDiXd4JMiP4U9KAw&s">
+    
+<style>
 
-    <style>
-    .dropdown-menu{
+.dropdown-menu{
       --bs-dropdown-color: rgba(255,255,255,1)!important;
       background-color: rgba(21, 23, 24, 0.5) !important;
   }
-  :root,
-  [data-bs-theme=light] {
+
+:root,[data-bs-theme=light] {
       --bs-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.9) !important;}
 
-      #emailin{
+#emailin{
        background-color:rgba(0,0,0,0) !important;
     }
-    input::placeholder {
+
+input::placeholder {
   color: #fff !important;
 }
+
 .oval-video {
       width: 100%;
       height: 300px;
@@ -29,82 +36,109 @@
       border-radius: 10%;
       overflow: hidden;
   }
-  p:hover{
+
+p:hover{
  opacity:0.5;
  transition: .5s ease;
  backface-visibility: hidden;
 }
 
-      </style>
-      
-      <script>
+p{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
 
-      </script>
+h1{
+  font-family: "Emblema One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dropdown{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
+
+.dropdown-item:active {
+background-color: rgb(110, 110, 110) !important;
+}
+
+</style>
+
 </head>
-  <body>
 
-    <!-- VID -->
+<body>
 
-    <div class="container-fluid bg-dark">
-      <div class="row position-relative">
-          <div class="vh-100 position-relative d-flex justify-content-center align-items-center">
-
-              <!-- Dropdown Menu -->
-               
-              <div class="position-absolute top-0 end-0 m-3 z-1">
-                  <div class="dropdown">
-                      <button class="btn btn-lg dropdown-toggle text-white border-0" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                          Services
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-dark border-light-subtle shadow" aria-labelledby="dropdownMenuButton">
-                          <li><a class="dropdown-item" href="#">Shots.</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Set up a party.</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Contact us.</a></li>
-                      </ul>
-                  </div>
-              </div>
-
-              <!-- Video Background -->
-
-              <video src="https://videos.pexels.com/video-files/5473980/5473980-uhd_2732_1440_25fps.mp4" autoplay loop muted playsinline class="w-100 h-100 object-fit-cover position-absolute border-0 shadow">
-              </video>
-              <div class="text-center text-white position-relative bg-dark w-50 rounded shadow" style="--bs-bg-opacity: .3;">
-                  <p class="fs-1" style="text-shadow: rgb(0, 0, 0) 2px 2px 6px;">Join our newsletter and never miss a beat!</p>
-                  <button type="submit" class="btn btn-outline-light mb-3 shadow" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      Sure!
-                  </button>
-              </div>
-          </div>
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                  <div class="modal-content bg-dark text-white border border-light-subtle" style="--bs-bg-opacity: .8;">
-                    <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="exampleModalLabel">Let's do this</h1>
-                          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                          <div class="modal-body">
-                          <div class="mb-3">
-                              <label for="emailin" class="form-label text-start">Email address</label>
-                              <input type="email" class="form-control text-white shadow" id="emailin" placeholder="name@example.com">
-                          </div>
-                      </div>
-                      <div class="modal-footer">
-                          <button type="button" class="btn btn-outline-success shadow">Send it</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
+<div class="container-fluid">
+<div class="container-fluid bg-dark">
+  <div class="row position-relative">
+    <div class="vh-100 position-relative d-flex justify-content-center align-items-center flex-column">
+  
+<!-- DROPDOWN -->
+      <div class="position-absolute top-0 end-0 m-3 z-1">
+        <div class="dropdown">
+          <button class="btn btn-lg dropdown-toggle text-white border-0" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Quick Access</button>
+            <ul class="dropdown-menu dropdown-menu-dark border-light-subtle shadow" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Shots.</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Set-up a party.</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Set-up a game.</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Contact us.</a></li>
+            </ul>
+        </div>
       </div>
+  
+<!-- VID -->
+
+      <video src="https://videos.pexels.com/video-files/5473980/5473980-uhd_2732_1440_25fps.mp4" autoplay loop muted playsinline class="w-100 h-100 object-fit-cover position-absolute border-0 shadow z-0 rounded"></video>
+           
+<!-- TITLE -->
+        <h1 class=" display-1 text-white text-center position-relative mb-5 pb-5" style="text-shadow: rgb(0, 0, 0) 2px 2px 6px;">Generus</h1>
+
+<!-- MESSAGE -->
+      <div class="text-center text-white position-relative bg-dark rounded shadow p-2" style="--bs-bg-opacity: .3;">
+        <p class="fs-2" style="text-shadow: rgb(0, 0, 0) 2px 2px 6px;">Join our newsletter and never miss a beat!</p>
+        <button type="submit" class="btn btn-lg btn-outline-light mb-3 shadow" data-bs-toggle="modal" data-bs-target="#exampleModal">Sure!</button>
+      </div>
+    </div>
+  
+<!-- MODAL -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-white border border-light-subtle" style="--bs-bg-opacity: .8;">
+          <div class="modal-header">
+            <p class="modal-title fs-5" id="exampleModalLabel">Let's do this!</p>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="emailin" class="form-label text-start">Email address</label>
+                <input type="email" class="form-control text-white shadow" id="emailin" placeholder="name@example.com">
+              </div>
+            </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success shadow">Send it</button>
+              </div>
+        </div>
+      </div>
+    </div>
+          
   </div>
+</div>
 
-  <!-- CAROUSEL -->
+<!-- CAROUSEL -->
 
-<p class="fs-1 text-center my-2" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">Services</p>
+<p class="fs-1 text-center my-4" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">Services</p>
 
 <div class="container w-50">
-  <div id="carouselExampleCaptions" class="carousel slide mx-auto my-3 border-top border-bottom p-3" data-bs-ride="carousel">
+  <div id="carouselExampleCaptions" class="carousel slide mx-auto my-3 border-top border-bottom p-5" data-bs-ride="carousel">
     <div class="carousel-indicators btn-light">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -113,22 +147,22 @@
     <div class="carousel-inner rounded shadow">
       <div class="carousel-item active" data-bs-interval="4000">
         <video src="https://videos.pexels.com/video-files/7884514/7884514-sd_960_506_25fps.mp4" style="height:500px;" autoplay loop muted inline class="d-block w-100 rounded shadow object-fit-cover" alt="1"></video>
-        <div class="carousel-caption d-none d-md-block text-white" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">
-          <p class="fs-5">Birthdays</p>
+        <div class="carousel-caption d-none d-md-block text-white" style="text-shadow: rgb(0, 0, 0) 2px 2px 4px;">
+          <p class="display-5">Birthdays</p>
           <p>Celebrate your day with us!</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="4000">
         <video src="https://videos.pexels.com/video-files/12893479/12893479-hd_1920_1080_24fps.mp4" style="height:500px;" autoplay loop muted inline class="d-block w-100 rounded shadow object-fit-cover" alt="2"></video>
-        <div class="carousel-caption d-none d-md-block text-white" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">
-            <p class="fs-5">Costume Parties</p>
+        <div class="carousel-caption d-none d-md-block text-white" style="text-shadow: rgb(0, 0, 0) 2px 2px 4px;">
+            <p class="display-5">Costume Parties</p>
           <p>For a small fee you make everyone be forced to use a costume the whole night! Yes, even the employees</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="5000">
         <video src="https://videos.pexels.com/video-files/7884417/7884417-sd_960_506_25fps.mp4" style="height:500px;" autoplay loop muted inline class="d-block w-100 rounded shadow object-fit-cover z-0" alt="3"></video>
-        <div class="carousel-caption d-none d-md-block text-white z-1" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">
-          <p class="fs-5">Games</p>
+        <div class="carousel-caption d-none d-md-block text-white" style="text-shadow: rgb(0, 0, 0) 2px 2px 4px;">
+          <p class="display-5">Games</p>
           <p>Bring your own or ask us to fix it for you!</p>
         </div>
       </div>
@@ -144,129 +178,124 @@
   </div>
 </div>
 
-     <!-- CARDS -->
+<!-- CARDS -->
 
-      <div class="bg-dark text-body-secondary p-3">
+<div class="bg-dark text-body-secondary p-3">
 
-      <div class="row">
-        <div class="col-6"><video src="https://videos.pexels.com/video-files/12893475/12893475-hd_1920_1080_24fps.mp4" class="object-fit-cover w-100 h-100 shadow rounded" autoplay loop muted playsinline></video></div>
-            <div class="col-6 m-auto shadow rounded"><p class="fs-1 text-white" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">Party.</p> <p class="fs-4">In here we do not take tomorrow for granted, so we make the most out of today.</p></div>
-        </div>
-
-      <div class="row">
-        <div class="col-6 m-auto shadow rounded"><p class="fs-1 w-100 text-end text-white" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">Drink.</p><p class="text-end fs-4">With unlimited drinks after entry fee, you will be able to go rounds after rounds of your favorite shots... We won't tell you to not overdo them.</p></div>
-        <div class="col-6"><video src="https://videos.pexels.com/video-files/7271834/7271834-uhd_2560_1440_25fps.mp4" class="object-fit-cover w-100 h-100 shadow rounded" autoplay loop muted playsinline></video></div>
-      </div>
-
-      <div class="row">
-        <div class="col-6"><video src="https://videos.pexels.com/video-files/2022395/2022395-hd_1920_1080_30fps.mp4" class="object-fit-cover w-100 h-100 shadow rounded" autoplay loop muted playsinline></video></div>
-        <div class="col-6 m-auto shadow rounded"><p class="fs-1 text-white" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">Dance.</p> <p class="fs-4">Our dance floors are made for just one thing.</p></div>
-      </div>
-
-    </div>
-
-    <!-- PEOPLE -->
-
-    <div class="container align-items-center text-center justify-content-center mx-auto my-3 border-top">
-      <p class="fs-1" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">What can you expect?</p>
-  
-      <div class="container d-flex justify-content-center flex-wrap">
-  
-          <div class="card my-3 mx-5 border-0 text-center shadow p-3" style="width: 18rem;">
-              <div class="d-flex justify-content-center">
-                  <video src="https://videos.pexels.com/video-files/7722295/7722295-uhd_2560_1440_25fps.mp4" 
-                         class="oval-video shadow border-0" autoplay loop muted playsinline></video>
-              </div>
-              <div class="card-body">
-                  <p class="card-text fs-4" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">World-class DJ's</p>
-                  <p class="fs-6 text-white"><a href="#"><u class="link-secondary" style="text-shadow: rgb(0, 0, 0) 2px 2px 20px;">Learn More</u></a></p>
-              </div>
-          </div>
-  
-          <div class="card my-3 mx-5 border-0 text-center shadow p-3" style="width: 18rem;">
-              <div class="d-flex justify-content-center">
-                  <video src="https://videos.pexels.com/video-files/7271822/7271822-uhd_1440_2560_25fps.mp4" 
-                         class="oval-video shadow border-0" autoplay loop muted playsinline></video>
-              </div>
-              <div class="card-body">
-                  <p class="card-text fs-4" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">Certified Bartenders</p>
-                  <p class="fs-6 text-white"><a href="#"><u class="link-secondary" style="text-shadow: rgb(0, 0, 0) 2px 2px 20px;">Learn More</u></a></p>
-              </div>
-          </div>
-  
-          <div class="card my-3 mx-5 border-0 text-center shadow p-3" style="width: 18rem;">
-              <div class="d-flex justify-content-center">
-                  <video src="https://videos.pexels.com/video-files/3223449/3223449-sd_640_360_24fps.mp4" 
-                         class="oval-video shadow border-0" autoplay loop muted playsinline></video>
-              </div>
-              <div class="card-body">
-                  <p class="card-text fs-4" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">Top-notch Security</p>
-                  <p class="fs-6"><a href="#"><u class="link-secondary" style="text-shadow: rgb(0, 0, 0) 2px 2px 20px;">Learn More</u></a></p>
-              </div>
-          </div>
-  
-      </div>
+  <div class="row">
+    <div class="col-6"><video src="https://videos.pexels.com/video-files/12893475/12893475-hd_1920_1080_24fps.mp4" class="object-fit-cover w-100 h-100 shadow rounded" autoplay loop muted playsinline></video></div>
+    <div class="col-6 m-auto shadow rounded"><p class="fs-1 text-white" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">Party.</p> <p class="fs-4">In here we do not take tomorrow for granted, so we make the most out of today.</p></div>
   </div>
 
-      <!-- NEWSLETTER -->
+  <div class="row">
+    <div class="col-6 m-auto shadow rounded"><p class="fs-1 w-100 text-end text-white" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">Drink.</p><p class="text-end fs-4">With unlimited drinks after entry fee, you will be able to go rounds after rounds of your favorite shots... We won't tell you to not overdo them.</p></div>
+    <div class="col-6"><video src="https://videos.pexels.com/video-files/7271834/7271834-uhd_2560_1440_25fps.mp4" class="object-fit-cover w-100 h-100 shadow rounded" autoplay loop muted playsinline></video></div>
+  </div>
 
-      <div class="container-fluid bg-dark">
-        <div class="row position-relative">
-            <div class="vh-100 position-relative d-flex justify-content-center align-items-center">
-              <video src="https://videos.pexels.com/video-files/7269643/7269643-uhd_2560_1440_25fps.mp4" autoplay loop muted playsinline class="w-100 h-100 object-fit-cover position-absolute border-0 shadow"></video>
-          <div class="text-center text-white position-relative bg-dark w-50 rounded shadow" style="--bs-bg-opacity: .3;">
-              <p class="fs-1" style="text-shadow: rgb(0, 0, 0) 2px 2px 6px;">Still unsure? No problem.</p>
-              <button type="submit" class="btn btn-outline-light mb-3 shadow" data-bs-toggle="modal" data-bs-target="#freemodal">
-                  First entry is on us through this link.
-              </button>
-          </div>
+  <div class="row">
+    <div class="col-6"><video src="https://videos.pexels.com/video-files/2022395/2022395-hd_1920_1080_30fps.mp4" class="object-fit-cover w-100 h-100 shadow rounded" autoplay loop muted playsinline></video></div>
+    <div class="col-6 m-auto shadow rounded"><p class="fs-1 text-white" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">Dance.</p> <p class="fs-4">Our dance floors are made for just one thing.</p></div>
+  </div>
+
+</div>
+
+<!-- PEOPLE -->
+
+<div class="container align-items-center text-center justify-content-center mx-auto my-3 border-top border-bottom p-3">
+  <p class="fs-1" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">What can you expect?</p>
+  
+  <div class="container d-flex justify-content-center flex-wrap">
+
+    <div class="card my-3 mx-5 border-0 text-center shadow p-3" style="width: 18rem;">
+      <div class="d-flex justify-content-center">
+        <video src="https://videos.pexels.com/video-files/7722295/7722295-uhd_2560_1440_25fps.mp4" class="oval-video shadow border-0" autoplay loop muted playsinline></video>
       </div>
-      <div class="modal fade" id="freemodal" tabindex="-1" aria-labelledby="freentry" aria-hidden="true">
-          <div class="modal-dialog">
-              <div class="modal-content bg-dark text-white border border-light-subtle" style="--bs-bg-opacity: .8;">
-                <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="freentry">Free entry just for you!</h1>
-                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                      <div class="modal-body">
-                      <div class="mb-3">
-                          <label for="emailin" class="form-label text-start">Give us your Email and in return we will give you fun.</label>
-                          <input type="email" class="form-control text-white shadow" id="emailin" placeholder="name@example.com">
-                      </div>
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-outline-success shadow">Send it</button>
-                  </div>
-              </div>
-          </div>
+      <div class="card-body">
+        <p class="card-text fs-4" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">World-class DJ's</p>
+        <p class="fs-6 text-white"><a href="#"><u class="link-secondary" style="text-shadow: rgb(0, 0, 0) 2px 2px 20px;">Learn More</u></a></p>
       </div>
+    </div>
+  
+    <div class="card my-3 mx-5 border-0 text-center shadow p-3" style="width: 18rem;">
+      <div class="d-flex justify-content-center">
+        <video src="https://videos.pexels.com/video-files/7271822/7271822-uhd_1440_2560_25fps.mp4" class="oval-video shadow border-0" autoplay loop muted playsinline></video>
+      </div>
+      <div class="card-body">
+        <p class="card-text fs-4" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">Certified Bartenders</p>
+        <p class="fs-6 text-white"><a href="#"><u class="link-secondary" style="text-shadow: rgb(0, 0, 0) 2px 2px 20px;">Learn More</u></a></p>
+      </div>
+    </div>
+  
+    <div class="card my-3 mx-5 border-0 text-center shadow p-3" style="width: 18rem;">
+      <div class="d-flex justify-content-center">
+        <video src="https://videos.pexels.com/video-files/3223449/3223449-sd_640_360_24fps.mp4" class="oval-video shadow border-0" autoplay loop muted playsinline></video>
+      </div>
+      <div class="card-body">
+        <p class="card-text fs-4" style="text-shadow: rgb(0, 0, 0) 2px 2px 2px;">Top-notch Security</p>
+        <p class="fs-6"><a href="#"><u class="link-secondary" style="text-shadow: rgb(0, 0, 0) 2px 2px 20px;">Learn More</u></a></p>
+      </div>
+    </div>
   </div>
 </div>
 
-       <!-- FOOTER -->
+<!-- NEWSLETTER -->
 
-        <div class="container">
-          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <p class="col-md-4 mb-0 text-body-secondary" style="text-shadow: rgb(0, 0, 0) 2px 2px 6px;">© 2025 Company, Inc.</p>
-        
-            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-        
-            <ul class="nav col-md-4 justify-content-end" style="text-shadow: rgb(0, 0, 0) 2px 2px 6px;">
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="bi bi-instagram"></i></a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="bi bi-facebook"></i></a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="bi bi-twitter-x"></i></a></li>
-            </ul>
-          </footer>
+<div class="container-fluid bg-dark">
+  <div class="row position-relative">
+    <div class="vh-100 position-relative d-flex justify-content-center align-items-center">
+      <video src="https://videos.pexels.com/video-files/7269643/7269643-uhd_2560_1440_25fps.mp4" autoplay loop muted playsinline class="w-100 h-100 object-fit-cover position-absolute border-0 shadow rounded"></video>
+      <div class="text-center text-white position-relative bg-dark rounded shadow p-2" style="--bs-bg-opacity: .3;">
+        <p class="fs-1" style="text-shadow: rgb(0, 0, 0) 2px 2px 6px;">Still unsure? No problem.</p>
+        <button type="submit" class="btn btn-outline-light mb-3 shadow" data-bs-toggle="modal" data-bs-target="#freemodal">First entry is on us through this link.</button>
+      </div>
+    </div>
+    <div class="modal fade" id="freemodal" tabindex="-1" aria-labelledby="freentry" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-white border border-light-subtle" style="--bs-bg-opacity: .8;">
+          <div class="modal-header">
+            <p class="modal-title fs-5" id="freentry">Free entry just for you!</p>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="emailin" class="form-label text-start">Give us your Email and in return we will give you fun.</label>
+              <input type="email" class="form-control text-white shadow" id="emailin" placeholder="name@example.com">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-success shadow">Send it</button>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- FOOTER -->
+
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-body-secondary" style="text-shadow: rgb(0, 0, 0) 2px 2px 6px;">© 2025 Generus, Inc.</p>
+        
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+        
+    <ul class="nav col-md-4 justify-content-end" style="text-shadow: rgb(0, 0, 0) 2px 2px 6px;">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="bi bi-instagram"></i></a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="bi bi-facebook"></i></a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="bi bi-twitter-x"></i></a></li>
+    </ul>
+  </footer>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   
-  </body>
+</body>
+
 </html>
